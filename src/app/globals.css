@@ -20,3 +20,159 @@ html, body{
   height: 100%;
   scroll-behavior: smooth;
 }
+
+body{
+  background-color: #2196f3;
+  overflow-x: hidden;
+}
+
+.bg_color{
+  width: 100%;
+  height: 70%;
+  background-color: white;
+  position: absolute;
+  top:0;
+  z-index: -1;
+
+}
+.waves{
+  width: 6000px;
+  height: 100%;
+  background-image: url("/wd2.svg");
+  top:350px;
+  left:0;
+  position: absolute;
+  background-position: bottom;
+  z-index: -2;
+}
+.w1{
+  animation: w1 7s linear infinite;
+
+}
+.w2{
+  animation: w2 7s -.125s linear infinite, move 7s ease -.125s infinite;
+  opacity: 0.5;
+}
+
+@keyframes w1{
+  0%{
+    margin-left: 0;
+  }
+  100%{
+    margin-left: -1600px;
+  }
+}
+
+@keyframes w2{
+  0%{
+    margin-left: 0;
+  }
+  100%{
+    margin-left: -1600px;
+  }
+}
+@keyframes move{
+  0%,
+  100%{
+    transform: translateY(-25px);
+  }
+  50%{
+    transform: translateY(10px);
+  }
+}
+.container__vector img{
+  transition: all 300ms;
+  animation: move_vector 6s ease-in-out infinite;
+}
+
+@keyframes move_vector{
+  0%{
+      transform: translateY(35px);
+  }
+  25%{
+      transform: translateY(-10px);
+  }
+  100%{
+      transform: translateY(35px);
+  }
+}
+
+.footer{
+  width: 100%;
+  padding: 50px 0px;
+  font-family: 'Nunito', sans-serif;
+  *background-color: var(--color-esqueleto);
+  background-image: url("/background-footer.svg");
+  background-size: cover;
+
+  /*webkit-mask-image: url("../Images/background-footer.svg");
+  mask-image: url("../Images/background-footer.svg");
+  -webkit-mask-size: cover;
+  mask-size: cover;*/
+}
+
+.container__footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 100px;
+}
+
+.box__footer{
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.box__footer .logo img{
+  width: 180px;
+}
+
+.box__footer .terms{
+  max-width: 350px;
+  margin-top: 20px;
+  font-weight: 500;
+  color: #7a7a7a;
+  font-size: 18px;
+
+}
+
+.box__footer h2{
+  margin-bottom: 30px;
+  color: #242424;
+  font-weight: 700;
+}
+
+.box__footer a{
+  margin-top: 10px;
+  color: #7a7a7a;
+  font-weight: 600;
+}
+
+.box__footer a:hover{
+  opacity: 0.8;
+}
+
+.box__footer a .fab{
+  font-size: 20px;
+}
+
+.box__copyright{
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 0px 40px;
+}
+
+.box__copyright p{
+  margin-top: 20px;
+  color: #7a7a7a;
+}
+
+.box__copyright hr{
+  border: none;
+  height: 1px;
+  background-color: #7a7a7a;
+}
