@@ -19,8 +19,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={styles}>
-        <div className='fixed h-full w-full flex items-center justify-center '>
-        <img src="/watermark.svg" className="w-[70vw] h-[70vh] z-50 opacity-[0.02]" />
+        <div className='fixed w-full flex items-center justify-center '>
+        <img src="/watermark.svg" alt="watermark" className="w-[70vw] z-50 opacity-[0.02]" />
         </div>
         {children}
         </body>

@@ -27,7 +27,7 @@ const Title: NextPage = () => {
   }, []);
 
   return (
-    <div className="text-lg 2xl:text-6xl font-bold  z-50">
+    <div className="text-lg 2xl:text-6xl font-bold  z-50 h-96">
       <motion.span
         className="inline-block bg-gradient-to-r text-transparent bg-clip-text from-[#0056a4] to-[#00427e] w-[15em] h-[20em]"
         initial={{ opacity: 0 }}

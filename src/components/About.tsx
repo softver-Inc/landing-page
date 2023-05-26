@@ -2,84 +2,29 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="p-6 mr-2   sm:rounded-lg flex justify-center flex-col">
-      <h1 className="text-4xl sm:text-5xl text-gray-800 font-extrabold tracking-tight">
-        Get in touch
-      </h1>
-      <p className="text-normal text-lg sm:text-2xl font-medium text-gray-600 mt-2">
-        Fill in the form to start a conversation
-      </p>
-
-      <div className="flex items-center mt-8 text-gray-600 ">
-        <svg
-          fill="none"
-          stroke="currentColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="1.5"
-          viewBox="0 0 24 24"
-          className="w-8 h-8 text-gray-500"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="1.5"
-            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-          />
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="1.5"
-            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-          />
-        </svg>
-        <div className="ml-4 text-md tracking-wide font-semibold">
-          Distrito Nacional, Dominican Republic
+    <div className="flex flex-col sm:flex-row items-center justify-around sm:ml-14 w-full">
+      <div className=" w-11/12 sm:w-1/2 flex flex-col bg-white rounded-2xl p-10 mx-10">
+        <span className="bold text-4xl mb-5 text-[#fa4741]">About Us</span>
+        <div className="text-xl text-gray-700">
+          Our company is dedicated to providing top-quality software solutions
+          for businesses of all sizes. We have a team of experienced and skilled
+          developers who are proficient in a wide range of programming languages
+          and technologies. Whether you need a custom software application built
+          from scratch or an existing system updated and improved, we have the
+          expertise and resources to deliver results that meet your unique needs
+          and goals. We pride ourselves on our ability to turn complex ideas
+          into simple, intuitive solutions that drive growth and success for our
+          clients. Contact us today to learn more about how we can help your
+          business thrive in the digital age.
         </div>
       </div>
-
-      <div className="flex items-center mt-4 text-gray-600 ">
-        <svg
-          fill="none"
-          stroke="currentColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="1.5"
-          viewBox="0 0 24 24"
-          className="w-8 h-8 text-gray-500"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="1.5"
-            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-          />
-        </svg>
-        <div className="ml-4 text-md tracking-wide font-semibold w-40">
-          +1 (849) 474-1474
-        </div>
-      </div>
-
-      <div className="flex items-center mt-2 text-gray-600 ">
-        <svg
-          fill="none"
-          stroke="currentColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="1.5"
-          viewBox="0 0 24 24"
-          className="w-8 h-8 text-gray-500"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="1.5"
-            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-          />
-        </svg>
-        <div className="ml-4 text-md tracking-wide font-semibold w-40">
-          negocios@softver.tech
-        </div>
+      <div className="hidden sm:block sm:w-[35em]">
+        <img
+          src="/about-image.png"
+          className="w-full "
+          alt="illustration"
+          loading="lazy"
+        />
       </div>
     </div>
   );

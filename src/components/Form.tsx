@@ -2,7 +2,8 @@
 import React from "react";
 
 import { useState } from "react";
-import About from "./About";
+import ContactInfo from "./ContactInfo";
+
 const Form = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -15,7 +16,7 @@ const Form = () => {
 
   return (
     <div className="bg-white p-16 rounded z-50 flex flex-col sm:flex-row my-50">
-      <About />
+      <ContactInfo />
       <form
         onSubmit={handleSubmit}
         className=""
