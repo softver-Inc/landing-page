@@ -2,13 +2,14 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { NextPage } from 'next';
+import { translate } from '@/locales';
 
 const Title: NextPage = () => {
   const [text, setText] = useState('');
   const [dotVisible, setDotVisible] = useState(false);
 
   useEffect(() => {
-    const message = 'Unnlocking potential through technology.';
+    const message = translate("slogan");
     let currentIndex = 0;
 
     const intervalId = setInterval(() => {
