@@ -1,26 +1,50 @@
 "use client";
 import React from "react";
-
 import { useState } from "react";
 import ContactInfo from "./ContactInfo";
+import { toast, Toaster } from "react-hot-toast";
+
+const notify = (msg: string, styles?: string) =>
+  toast.custom((t) => (
+    <div
+      className={`${styles} bg-white px-6 py-4 shadow-md rounded-full ${
+        t.visible ? "animate-enter" : "animate-leave"
+      }`}
+    >
+      {msg}
+    </div>
+  ));
 
 const Form = () => {
   const [name, setName] = useState("");
+  const [company, setCompany] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleSubmit = (e: { preventDefault: () => void }) => {
+  const handleSubmit = async (e: { preventDefault: () => void }) => {
     e.preventDefault();
-    console.log(name, email, message);
+
+    fetch("https://softver-internal.deno.dev/contact", {
+      method: "POST",
+      body: JSON.stringify({
+        name,
+        company,
+        email,
+        project: message,
+      }),
+    })
+      .then((response) => response.json())
+      .then(() => notify("Submitted ", "text-white bg-green-500"))
+      .catch(() => {
+        notify("Error sending data", "bg-red-600");
+      });
   };
 
   return (
     <div className="bg-white p-16 rounded z-50 flex flex-col sm:flex-row my-50">
       <ContactInfo />
-      <form
-        onSubmit={handleSubmit}
-        className=""
-      >
+      <Toaster />
+      <form onSubmit={handleSubmit} className="" id="contact">
         <div className="mb-4">
           <label htmlFor="name" className="text-sm font-semibold">
             Name
@@ -42,8 +66,8 @@ const Form = () => {
             type="text"
             id="name"
             name="name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
+            value={company}
+            onChange={(e) => setCompany(e.target.value)}
             className=" bg-gray-50 border-2 rounded-md py-2 px-4 w-full focus:outline-none focus:ring-blue-500"
           />
         </div>
