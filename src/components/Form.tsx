@@ -7,7 +7,7 @@ import { toast, Toaster } from "react-hot-toast";
 const notify = (msg: string, styles?: string) =>
   toast.custom((t) => (
     <div
-      className={`${styles} bg-white px-6 py-4 shadow-md rounded-full ${
+      className={`${styles} px-6 py-4 shadow-md rounded-full ${
         t.visible ? "animate-enter" : "animate-leave"
       }`}
     >
