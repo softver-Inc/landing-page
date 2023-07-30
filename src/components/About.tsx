@@ -3,9 +3,9 @@ import React from "react";
 const About = () => {
   return (
     <div className="flex flex-col sm:flex-row items-center justify-around sm:ml-14 w-full">
-      <div className=" w-11/12 sm:w-1/2 flex flex-col bg-white rounded-2xl p-10 mx-10">
-        <span className="bold text-4xl mb-5 text-[#fa4741]">About Us</span>
-        <div className="text-xl text-gray-700">
+      <div className=" w-11/12 sm:w-1/2 flex flex-col bg-white rounded-2xl p-3 2xl:p-8 mx-10">
+        <span className="bold text-xl xl:text-2xl mb-5 text-[#fa4741]">About Us</span>
+        <div className="text-sm 2xl:text-lg text-gray-700">
           Our company is dedicated to providing top-quality software solutions
           for businesses of all sizes. We have a team of experienced and skilled
           developers who are proficient in a wide range of programming languages

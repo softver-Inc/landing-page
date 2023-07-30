@@ -5,13 +5,15 @@ import Navbar from "@/components/Navbar";
 import Services from "@/components/Services";
 import Title from "@/components/Title";
 import Waves from "@/components/Wave";
+import Link from "next/link";
 export default function Home() {
   return (
     <div className="w-full h-full">
-      <Waves />
       <Navbar />
+      
+      <Waves />
       <div>
-        <div className="flex flex-row w-full my-60  justify-center items-center">
+        <div className="flex flex-row w-full my-60  justify-center items-center" id="home">
           <div className="flex flex-col relative lg:-top-60 4xl:-top-36 ">
             <img
               src="/horizontal.svg"
@@ -29,23 +31,23 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-screen sm:h-screen relative ">
+        <div className="w-screen lg:h-screen relative" id="services">
           <Services />
         </div>
-        <div className="my-[32rem] h-screen flex items-center justify-center">
+        <div className="my-10 lg:my-[32rem] lg:h-screen flex items-center justify-center">
           <About />
         </div>
-        <div className="relative w-screen flex flex-col items-center justify-center h-screen">
+        <div className="static xl:relative w-screen flex flex-col items-center justify-center h-screen">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 100 50"
-            className="absolute w-[160vw]"
+            className="absolute w-[160vw] xl:block hidden"
           >
             <path d="M0 50 A50 50 0 0 1 100 50 H0 Z" fill="#f3f4f6" />
           </svg>
 
           <div className="flex w-full justify-center items-center h-screen overflow-hidden">
-            <div className="flex z-50">
+            <div className="flex z-50" >
               <Form />
             </div>
           </div>
