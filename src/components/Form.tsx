@@ -24,7 +24,7 @@ const Form = () => {
   const handleSubmit = async (e: { preventDefault: () => void }) => {
     e.preventDefault();
 
-    fetch("https://softver-internal.deno.dev/contact", {
+    fetch("https://walrus-app-ueuv8.ondigitalocean.app/contact", {
       method: "POST",
       body: JSON.stringify({
         name,
