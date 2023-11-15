@@ -45,8 +45,7 @@
       }
       var options = extend(defaults, args);
       options.startingYOffset = window.pageYOffset;
-      options.distanceYOffset =
-        parseInt(options.to, 10) - options.startingYOffset;
+      options.distanceYOffset = parseInt(options.to, 10) - options.startingYOffset;
       window.requestAnimationFrame(function (timestamp) {
         return animateScroll(options, timestamp);
       });
@@ -57,12 +56,7 @@
       }
       var currentTime = now - options.startTime;
       var newYOffset = Math.round(
-        options.easing(
-          currentTime,
-          options.startingYOffset,
-          options.distanceYOffset,
-          options.duration
-        )
+        options.easing(currentTime, options.startingYOffset, options.distanceYOffset, options.duration)
       );
       if (currentTime < options.duration) {
         window.requestAnimationFrame(function (timestamp) {
@@ -81,11 +75,7 @@
       if (Number.isInteger) {
         return Number.isInteger(value);
       } else {
-        return (
-          typeof value === "number" &&
-          isFinite(value) &&
-          Math.floor(value) === value
-        );
+        return typeof value === "number" && isFinite(value) && Math.floor(value) === value;
       }
     };
     var extend = function extend(defaults, options) {
@@ -156,6 +146,7 @@
       const postslider = new Splide(postslider_class, {
         rewind: true,
         pagination: true,
+        autoplay: true,
         arrows: true,
         type: "loop",
         drag: "free",
@@ -217,8 +208,7 @@
 
   // if scroll down
   const myScrollspy = function () {
-    var scrollpos =
-      document.body.scrollTop || document.documentElement.scrollTop;
+    var scrollpos = document.body.scrollTop || document.documentElement.scrollTop;
     var nav_height = 80;
     var main_nav = document.querySelector(".main-nav");
 
@@ -251,17 +241,12 @@
         });
 
         window.onscroll = function () {
-          var scrollPosition =
-            document.documentElement.scrollTop || document.body.scrollTop;
+          var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
 
           for (i in sections) {
             if (sections[i] <= scrollPosition + nav_height) {
-              document
-                .querySelector(".navbar>li>.active")
-                .classList.remove("active");
-              document
-                .querySelector("a[href*=" + i + "]")
-                .classList.add("active");
+              document.querySelector(".navbar>li>.active").classList.remove("active");
+              document.querySelector("a[href*=" + i + "]").classList.add("active");
             }
           }
         };
