@@ -60,29 +60,6 @@
       rel="icon"
       href="https://media.licdn.com/dms/image/D560BAQHlywtpQ17T0Q/company-logo_200_200/0/1698208036070?e=1707955200&v=beta&t=13K5SL4wz1KihDTnBzb9IzmfmW3cy0ZT_XbWksBNdhM"
     />
-
-    <script>
-      const handleSubmit = async (e) => {
-        console.log("click");
-
-        e.preventDefault();
-
-        fetch("https://walrus-app-ueuv8.ondigitalocean.app/contact", {
-          method: "POST",
-          body: JSON.stringify({
-            name,
-            company,
-            email,
-            project: message,
-          }),
-        })
-          .then((response) => response.json())
-          .then(() => notify("Submitted ", "text-white bg-green-500"))
-          .catch(() => {
-            notify("Error sending data", "bg-red-600");
-          });
-      };
-    </script>
   </head>
   <body class="text-gray-700">
     <!-- Google Tag Manager (noscript) -->
@@ -992,7 +969,7 @@
 
           <div class="flex flex-wrap flex-row -mx-4 justify-center">
             <div
-              class="flex-shrink max-w-full px-4 w-2/3 sm:w-1/2 md:w-5/12 lg:w-1/4 xl:px-6"
+              class="flex-shrink max-w-full px-4 w-2/3 sm:w-1/2 md:w-5/12 lg:w-1/5 xl:px-6"
             >
               <div
                 class="relative overflow-hidden bg-white dark:bg-gray-800 mb-12 hover-grayscale-0 wow fadeInUp"
@@ -1000,45 +977,18 @@
               >
                 <div class="relative overflow-hidden px-6">
                   <img
-                    src="https://media.licdn.com/dms/image/C5603AQEktUeTVXzy4Q/profile-displayphoto-shrink_800_800/0/1610485583020?e=1704931200&v=beta&t=Zl9toplWHxoMtqFamUyOtXINwP5INeWTFncmwtgXCPE"
+                    src="src/img/carlos.jpeg"
                     class="max-w-full h-auto mx-auto rounded-full bg-gray-50 grayscale"
                     alt="title image"
                   />
                 </div>
                 <div class="pt-6 text-center">
-                  <p class="text-lg leading-normal font-bold mb-1">
+                  <p class="text-sm leading-normal font-bold mb-1">
                     Carlos Espinal Estrella
                   </p>
                   <p class="text-gray-500 leading-relaxed font-light">CEO</p>
 
                   <div class="mt-2 mb-5 space-x-2">
-                    <a
-                      class="hover:text-blue-700"
-                      aria-label="Instagram link"
-                      href="https://www.instagram.com/carlos_js9"
-                      target="_blank"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="inline-block"
-                        width="1rem"
-                        height="1rem"
-                        viewBox="0 0 512 512"
-                      >
-                        <path
-                          fill="currentColor"
-                          d="M349.33,69.33a93.62,93.62,0,0,1,93.34,93.34V349.33a93.62,93.62,0,0,1-93.34,93.34H162.67a93.62,93.62,0,0,1-93.34-93.34V162.67a93.62,93.62,0,0,1,93.34-93.34H349.33m0-37.33H162.67C90.8,32,32,90.8,32,162.67V349.33C32,421.2,90.8,480,162.67,480H349.33C421.2,480,480,421.2,480,349.33V162.67C480,90.8,421.2,32,349.33,32Z"
-                        ></path>
-                        <path
-                          fill="currentColor"
-                          d="M377.33,162.67a28,28,0,1,1,28-28A27.94,27.94,0,0,1,377.33,162.67Z"
-                        ></path>
-                        <path
-                          fill="currentColor"
-                          d="M256,181.33A74.67,74.67,0,1,1,181.33,256,74.75,74.75,0,0,1,256,181.33M256,144A112,112,0,1,0,368,256,112,112,0,0,0,256,144Z"
-                        ></path>
-                      </svg>
-                    </a>
                     <a
                       class="hover:text-blue-700"
                       aria-label="Linkedin link"
@@ -1062,33 +1012,33 @@
                 </div>
               </div>
             </div>
-
             <div
-              class="flex-shrink max-w-full px-4 w-2/3 sm:w-1/2 md:w-5/12 lg:w-1/4 xl:px-6"
+              class="flex-shrink max-w-full px-4 w-2/3 sm:w-1/2 md:w-5/12 lg:w-1/5 xl:px-6"
             >
               <div
                 class="relative overflow-hidden bg-white dark:bg-gray-800 mb-12 hover-grayscale-0 wow fadeInUp"
                 data-wow-duration="1s"
-                data-wow-delay=".1s"
+                data-wow-delay=".5s"
               >
                 <div class="relative overflow-hidden px-6">
                   <img
-                    src="https://media.licdn.com/dms/image/D4E03AQHrvdpoN_Ap0w/profile-displayphoto-shrink_800_800/0/1643226187983?e=1704931200&v=beta&t=BsevlFC6XCGIsVu2OH83CLYMKuUaE0LgjI3idM9livk"
+                    src="/src/img/joan.jpeg"
                     class="max-w-full h-auto mx-auto rounded-full bg-gray-50 grayscale"
+                    style="width: fit-content"
                     alt="title image"
                   />
                 </div>
                 <div class="pt-6 text-center">
-                  <p class="text-lg leading-normal font-bold mb-1">
-                    Erick Sosa Garcia
+                  <p class="text-sm leading-normal font-bold mb-1">
+                    Joan Peralta Sosa
                   </p>
-                  <p class="text-gray-500 leading-relaxed font-light">CTO</p>
+                  <p class="text-gray-500 leading-relaxed font-light">COO</p>
 
                   <div class="mt-2 mb-5 space-x-2">
                     <a
                       class="hover:text-blue-700"
-                      aria-label="Instagram link"
-                      href="https://www.instagram.com/buttercubz"
+                      aria-label="Linkedin link"
+                      href="https://www.linkedin.com/in/joan-ariel-peralta-sosa-6b4973183"
                       target="_blank"
                     >
                       <svg
@@ -1100,18 +1050,36 @@
                       >
                         <path
                           fill="currentColor"
-                          d="M349.33,69.33a93.62,93.62,0,0,1,93.34,93.34V349.33a93.62,93.62,0,0,1-93.34,93.34H162.67a93.62,93.62,0,0,1-93.34-93.34V162.67a93.62,93.62,0,0,1,93.34-93.34H349.33m0-37.33H162.67C90.8,32,32,90.8,32,162.67V349.33C32,421.2,90.8,480,162.67,480H349.33C421.2,480,480,421.2,480,349.33V162.67C480,90.8,421.2,32,349.33,32Z"
-                        ></path>
-                        <path
-                          fill="currentColor"
-                          d="M377.33,162.67a28,28,0,1,1,28-28A27.94,27.94,0,0,1,377.33,162.67Z"
-                        ></path>
-                        <path
-                          fill="currentColor"
-                          d="M256,181.33A74.67,74.67,0,1,1,181.33,256,74.75,74.75,0,0,1,256,181.33M256,144A112,112,0,1,0,368,256,112,112,0,0,0,256,144Z"
+                          d="M444.17,32H70.28C49.85,32,32,46.7,32,66.89V441.61C32,461.91,49.85,480,70.28,480H444.06C464.6,480,480,461.79,480,441.61V66.89C480.12,46.7,464.6,32,444.17,32ZM170.87,405.43H106.69V205.88h64.18ZM141,175.54h-.46c-20.54,0-33.84-15.29-33.84-34.43,0-19.49,13.65-34.42,34.65-34.42s33.85,14.82,34.31,34.42C175.65,160.25,162.35,175.54,141,175.54ZM405.43,405.43H341.25V296.32c0-26.14-9.34-44-32.56-44-17.74,0-28.24,12-32.91,23.69-1.75,4.2-2.22,9.92-2.22,15.76V405.43H209.38V205.88h64.18v27.77c9.34-13.3,23.93-32.44,57.88-32.44,42.13,0,74,27.77,74,87.64Z"
                         ></path>
                       </svg>
                     </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex-shrink max-w-full px-4 w-2/3 sm:w-1/2 md:w-5/12 lg:w-1/5 xl:px-6"
+            >
+              <div
+                class="relative overflow-hidden bg-white dark:bg-gray-800 mb-12 hover-grayscale-0 wow fadeInUp"
+                data-wow-duration="1s"
+                data-wow-delay=".1s"
+              >
+                <div class="relative overflow-hidden px-6">
+                  <img
+                    src="src/img/erick.jpeg"
+                    class="max-w-full h-auto mx-auto rounded-full bg-gray-50 grayscale"
+                    alt="title image"
+                  />
+                </div>
+                <div class="pt-6 text-center">
+                  <p class="text-sm leading-normal font-bold mb-1">
+                    Erick Sosa Garcia
+                  </p>
+                  <p class="text-gray-500 leading-relaxed font-light">CTO</p>
+
+                  <div class="mt-2 mb-5 space-x-2">
                     <a
                       class="hover:text-blue-700"
                       aria-label="Linkedin link"
@@ -1137,7 +1105,7 @@
             </div>
 
             <div
-              class="flex-shrink max-w-full px-4 w-2/3 sm:w-1/2 md:w-5/12 lg:w-1/4 xl:px-6"
+              class="flex-shrink max-w-full px-4 w-2/3 sm:w-1/2 md:w-5/12 lg:w-1/5 xl:px-6"
             >
               <div
                 class="relative overflow-hidden bg-white dark:bg-gray-800 mb-12 hover-grayscale-0 wow fadeInUp"
@@ -1146,45 +1114,18 @@
               >
                 <div class="relative overflow-hidden px-6">
                   <img
-                    src="https://media.licdn.com/dms/image/D4E03AQFrAc8KAeXFjw/profile-displayphoto-shrink_800_800/0/1671557696476?e=1704931200&v=beta&t=EKzaJVlvfbmARPDvDAzonVumQtmXN9NOUGQA53mqpDk"
+                    src="/src/img/alberto.jpeg"
                     class="max-w-full h-auto mx-auto rounded-full bg-gray-50 grayscale"
                     alt="title image"
                   />
                 </div>
                 <div class="pt-6 text-center">
-                  <p class="text-lg leading-normal font-bold mb-1">
+                  <p class="text-sm leading-normal font-bold mb-1">
                     Alberto Reyes Cespedes
                   </p>
                   <p class="text-gray-500 leading-relaxed font-light">CIO</p>
 
                   <div class="mt-2 mb-5 space-x-2">
-                    <a
-                      class="hover:text-blue-700"
-                      aria-label="Instagram link"
-                      href="https://www.instagram.com/albertojrc18"
-                      target="_blank"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="inline-block"
-                        width="1rem"
-                        height="1rem"
-                        viewBox="0 0 512 512"
-                      >
-                        <path
-                          fill="currentColor"
-                          d="M349.33,69.33a93.62,93.62,0,0,1,93.34,93.34V349.33a93.62,93.62,0,0,1-93.34,93.34H162.67a93.62,93.62,0,0,1-93.34-93.34V162.67a93.62,93.62,0,0,1,93.34-93.34H349.33m0-37.33H162.67C90.8,32,32,90.8,32,162.67V349.33C32,421.2,90.8,480,162.67,480H349.33C421.2,480,480,421.2,480,349.33V162.67C480,90.8,421.2,32,349.33,32Z"
-                        ></path>
-                        <path
-                          fill="currentColor"
-                          d="M377.33,162.67a28,28,0,1,1,28-28A27.94,27.94,0,0,1,377.33,162.67Z"
-                        ></path>
-                        <path
-                          fill="currentColor"
-                          d="M256,181.33A74.67,74.67,0,1,1,181.33,256,74.75,74.75,0,0,1,256,181.33M256,144A112,112,0,1,0,368,256,112,112,0,0,0,256,144Z"
-                        ></path>
-                      </svg>
-                    </a>
                     <a
                       class="hover:text-blue-700"
                       aria-label="Linkedin link"
@@ -1210,7 +1151,7 @@
             </div>
 
             <div
-              class="flex-shrink max-w-full px-4 w-2/3 sm:w-1/2 md:w-5/12 lg:w-1/4 xl:px-6"
+              class="flex-shrink max-w-full px-4 w-2/3 sm:w-1/2 md:w-5/12 lg:w-1/5 xl:px-6"
             >
               <div
                 class="relative overflow-hidden bg-white dark:bg-gray-800 mb-12 hover-grayscale-0 wow fadeInUp"
@@ -1219,13 +1160,13 @@
               >
                 <div class="relative overflow-hidden px-6">
                   <img
-                    src="https://media.licdn.com/dms/image/C5603AQGMP4hP0-7ynA/profile-displayphoto-shrink_800_800/0/1630253304637?e=1704931200&v=beta&t=GtIWkaarz7sYIo2KwVzt5HlP-97A7TZ2OlFfINOhLLc"
+                    src="/src/img/rivier.jpeg"
                     class="max-w-full h-auto mx-auto rounded-full bg-gray-50 grayscale"
                     alt="title image"
                   />
                 </div>
                 <div class="pt-6 text-center">
-                  <p class="text-lg leading-normal font-bold mb-1">
+                  <p class="text-sm leading-normal font-bold mb-1">
                     Rivier Grullon Ramirez
                   </p>
                   <p class="text-gray-500 leading-relaxed font-light">CSO</p>
@@ -1233,109 +1174,8 @@
                   <div class="mt-2 mb-5 space-x-2">
                     <a
                       class="hover:text-blue-700"
-                      aria-label="Instagram link"
-                      href="https://www.instagram.com/ramirez.001"
-                      target="_blank"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="inline-block"
-                        width="1rem"
-                        height="1rem"
-                        viewBox="0 0 512 512"
-                      >
-                        <path
-                          fill="currentColor"
-                          d="M349.33,69.33a93.62,93.62,0,0,1,93.34,93.34V349.33a93.62,93.62,0,0,1-93.34,93.34H162.67a93.62,93.62,0,0,1-93.34-93.34V162.67a93.62,93.62,0,0,1,93.34-93.34H349.33m0-37.33H162.67C90.8,32,32,90.8,32,162.67V349.33C32,421.2,90.8,480,162.67,480H349.33C421.2,480,480,421.2,480,349.33V162.67C480,90.8,421.2,32,349.33,32Z"
-                        ></path>
-                        <path
-                          fill="currentColor"
-                          d="M377.33,162.67a28,28,0,1,1,28-28A27.94,27.94,0,0,1,377.33,162.67Z"
-                        ></path>
-                        <path
-                          fill="currentColor"
-                          d="M256,181.33A74.67,74.67,0,1,1,181.33,256,74.75,74.75,0,0,1,256,181.33M256,144A112,112,0,1,0,368,256,112,112,0,0,0,256,144Z"
-                        ></path>
-                      </svg>
-                    </a>
-                    <a
-                      class="hover:text-blue-700"
                       aria-label="Linkedin link"
                       href="https://www.linkedin.com/in/rivier-grullon"
-                      target="_blank"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="inline-block"
-                        width="1rem"
-                        height="1rem"
-                        viewBox="0 0 512 512"
-                      >
-                        <path
-                          fill="currentColor"
-                          d="M444.17,32H70.28C49.85,32,32,46.7,32,66.89V441.61C32,461.91,49.85,480,70.28,480H444.06C464.6,480,480,461.79,480,441.61V66.89C480.12,46.7,464.6,32,444.17,32ZM170.87,405.43H106.69V205.88h64.18ZM141,175.54h-.46c-20.54,0-33.84-15.29-33.84-34.43,0-19.49,13.65-34.42,34.65-34.42s33.85,14.82,34.31,34.42C175.65,160.25,162.35,175.54,141,175.54ZM405.43,405.43H341.25V296.32c0-26.14-9.34-44-32.56-44-17.74,0-28.24,12-32.91,23.69-1.75,4.2-2.22,9.92-2.22,15.76V405.43H209.38V205.88h64.18v27.77c9.34-13.3,23.93-32.44,57.88-32.44,42.13,0,74,27.77,74,87.64Z"
-                        ></path>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="flex-shrink max-w-full px-4 w-2/3 sm:w-1/2 md:w-5/12 lg:w-1/4 xl:px-6"
-            >
-              <div
-                class="relative overflow-hidden bg-white dark:bg-gray-800 mb-12 hover-grayscale-0 wow fadeInUp"
-                data-wow-duration="1s"
-                data-wow-delay=".5s"
-              >
-                <div class="relative overflow-hidden px-6">
-                  <img
-                    src="https://media.licdn.com/dms/image/C4E03AQFYV3VViuZbEA/profile-displayphoto-shrink_400_400/0/1660963446112?e=1704931200&v=beta&t=E66ZSONBqOsTrehhf3d8WAI2H3xPVIGIBeqv797mpr4"
-                    class="max-w-full h-auto mx-auto rounded-full bg-gray-50 grayscale"
-                    style="width: fit-content"
-                    alt="title image"
-                  />
-                </div>
-                <div class="pt-6 text-center">
-                  <p class="text-lg leading-normal font-bold mb-1">
-                    Joan Peralta Sosa
-                  </p>
-                  <p class="text-gray-500 leading-relaxed font-light">COO</p>
-
-                  <div class="mt-2 mb-5 space-x-2">
-                    <a
-                      class="hover:text-blue-700"
-                      aria-label="Instagram link"
-                      href="https://www.instagram.com/joan_peralta8"
-                      target="_blank"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="inline-block"
-                        width="1rem"
-                        height="1rem"
-                        viewBox="0 0 512 512"
-                      >
-                        <path
-                          fill="currentColor"
-                          d="M349.33,69.33a93.62,93.62,0,0,1,93.34,93.34V349.33a93.62,93.62,0,0,1-93.34,93.34H162.67a93.62,93.62,0,0,1-93.34-93.34V162.67a93.62,93.62,0,0,1,93.34-93.34H349.33m0-37.33H162.67C90.8,32,32,90.8,32,162.67V349.33C32,421.2,90.8,480,162.67,480H349.33C421.2,480,480,421.2,480,349.33V162.67C480,90.8,421.2,32,349.33,32Z"
-                        ></path>
-                        <path
-                          fill="currentColor"
-                          d="M377.33,162.67a28,28,0,1,1,28-28A27.94,27.94,0,0,1,377.33,162.67Z"
-                        ></path>
-                        <path
-                          fill="currentColor"
-                          d="M256,181.33A74.67,74.67,0,1,1,181.33,256,74.75,74.75,0,0,1,256,181.33M256,144A112,112,0,1,0,368,256,112,112,0,0,0,256,144Z"
-                        ></path>
-                      </svg>
-                    </a>
-                    <a
-                      class="hover:text-blue-700"
-                      aria-label="Linkedin link"
-                      href="https://www.linkedin.com/in/joan-ariel-peralta-sosa-6b4973183"
                       target="_blank"
                     >
                       <svg
@@ -1426,14 +1266,12 @@
                 <!-- end section header -->
 
                 <!-- contact form -->
-                <form action="#">
+                <form onsubmit="handleSubmit">
                   <div class="flex flex-wrap flex-row -mx-4">
                     <div
                       class="flex-shrink w-full max-w-full md:w-1/2 px-4 mb-6"
                     >
-                      <label class="inline-block mb-2" for="name"
-                        >Tu nombre</label
-                      >
+                      <label class="inline-block mb-2" for="name">Nombre</label>
                       <input
                         type="text"
                         name="name"
@@ -1446,7 +1284,7 @@
                       class="flex-shrink w-full max-w-full md:w-1/2 px-4 mb-6"
                     >
                       <label class="inline-block mb-2" for="email"
-                        >Tu correo</label
+                        >Correo</label
                       >
                       <input
                         type="email"
@@ -1458,34 +1296,34 @@
                     </div>
                   </div>
                   <div class="mb-6">
-                    <label class="inline-block mb-2" for="subject"
-                      >Asunto</label
+                    <label class="inline-block mb-2" for="company"
+                      >Empresa</label
                     >
                     <input
                       type="text"
                       class="w-full leading-5 relative py-3 px-5 rounded text-gray-800 bg-white border-b border-gray-100 overflow-x-auto focus:outline-none focus:border-gray-400 focus:ring-0 dark:text-gray-400 dark:bg-gray-700 dark:border-gray-700 dark:focus:border-gray-600"
-                      name="subject"
-                      id="subject"
+                      name="company"
+                      id="company"
                     />
                     <div class="validate"></div>
                   </div>
                   <div class="mb-6">
-                    <label class="inline-block mb-2" for="messages"
-                      >Mensage</label
-                    >
+                    <label class="inline-block mb-2" for="project"
+                      >Descripción de tu proyecto
+                    </label>
                     <textarea
                       class="w-full leading-5 relative py-3 px-5 rounded text-gray-800 bg-white border-b border-gray-100 overflow-x-auto focus:outline-none focus:border-gray-400 focus:ring-0 dark:text-gray-400 dark:bg-gray-700 dark:border-gray-700 dark:focus:border-gray-600"
-                      name="message"
+                      name="project"
                       rows="10"
-                      id="messages"
+                      id="project"
                     ></textarea>
                     <div class="validate"></div>
                   </div>
                   <div class="text-center mb-6">
                     <span
-                      class="py-2.5 px-10 inline-block text-center leading-normal text-gray-100 bg-black border border-black hover:text-white hover:ring-0 focus:outline-none focus:ring-0"
+                      class="z-50 cursor-pointer py-2.5 px-10 inline-block text-center leading-normal text-gray-100 bg-black border border-black hover:text-white hover:ring-0 focus:outline-none focus:ring-0"
                       style="background-color: var(--primary)"
-                      onclick="handleSubmit"
+                      id="buttonSubmit"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -1757,5 +1595,30 @@
 
     <!-- Production js -->
     <!-- <script src="dist/js/scripts.js"></script> -->
+    <script defer>
+      const handleSubmit = async (e) => {
+        console.log("click");
+
+        e.preventDefault();
+
+        fetch("https://urchin-app-67my4.ondigitalocean.app/contact", {
+          method: "POST",
+          body: JSON.stringify({
+            name: document.querySelector("#name").value,
+            company: document.querySelector("#company").value,
+            email: document.querySelector("#email").value,
+            proyect: document.querySelector("#project").value,
+          }),
+        })
+          .then((response) => response.json())
+          .then(() => notify("Submitted ", "text-white bg-green-500"))
+          .catch(() => {
+            notify("Error sending data", "bg-red-600");
+          });
+      };
+      document
+        .querySelector("#buttonSubmit")
+        .addEventListener("click", handleSubmit);
+    </script>
   </body>
 </html>
